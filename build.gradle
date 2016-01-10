@@ -1,0 +1,19 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.0.37"
+}
+
+apply plugin: 'java'
+apply plugin: 'org.jetbrains.intellij'
+
+group 'com.krrrr38.idea.mockito.postfix'
+version '0.0.1'
+
+intellij {
+    pluginName 'Mockito Postfix Completion Plugin'
+
+    publish {
+        // pluginId 'plguinId'
+        // username 'uername'
+        // password 'password'
+    }
+}

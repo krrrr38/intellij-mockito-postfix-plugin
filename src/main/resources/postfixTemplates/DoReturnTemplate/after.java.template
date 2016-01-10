@@ -1,0 +1,7 @@
+import static org.mockito.Mockito.doReturn;
+
+public class FooTest {
+  void method(Object o) {
+    doReturn(ret).when(o)
+  }
+}

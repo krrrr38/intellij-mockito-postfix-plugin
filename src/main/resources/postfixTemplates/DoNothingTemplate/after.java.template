@@ -1,0 +1,7 @@
+import static org.mockito.Mockito.doNothing;
+
+public class FooTest {
+  void method(Object o) {
+    doNothing().when(o)
+  }
+}

@@ -1,0 +1,44 @@
+<idea-plugin version="2">
+  <id>com.krrrr38.idea.mockito.postfix</id>
+  <name>Mockito Postfix Completion Plugin</name>
+  <version>0.0.1</version>
+  <vendor email="k.kaizu38@gmail.com" url="http://www.krrrr38.com">krrrr38</vendor>
+
+  <description><![CDATA[
+          This plugin adds postfix completion template for <a href="http://mockito.org/">Mockito</a>.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      <ul>
+        <li>0.0.1 initial release</li>
+      </ul>
+    ]]>
+  </change-notes>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="139"/>
+
+  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <codeInsight.template.postfixTemplateProvider language="JAVA"
+                                                  implementationClass="com.krrrr38.idea.mockito.postfix.MockitoPostfixTemplateProvider" />
+  </extensions>
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+
+</idea-plugin>

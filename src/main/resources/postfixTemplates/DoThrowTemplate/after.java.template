@@ -1,0 +1,7 @@
+import static org.mockito.Mockito.doThrow;
+
+public class FooTest {
+  void method(Object o) {
+    doThrow(ex).when(o)
+  }
+}

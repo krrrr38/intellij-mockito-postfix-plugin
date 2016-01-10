@@ -1,0 +1,7 @@
+import static org.mockito.Mockito.mock;
+
+public class FooTest {
+  void method(Object o) {
+    mock(o)
+  }
+}

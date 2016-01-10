@@ -1,0 +1,7 @@
+import static org.mockito.Mockito.verify;
+
+public class FooTest {
+  void method(Object o) {
+    verify(o)
+  }
+}
