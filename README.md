@@ -6,7 +6,9 @@ This plugin is inspired by [assertj-postfix-plugin](https://github.com/tokuhirom
 
 ## Install
 
-TODO
+https://plugins.jetbrains.com/plugin/8150
+
+![](./images/download-plugin.png)
 
 ## Usage
 
