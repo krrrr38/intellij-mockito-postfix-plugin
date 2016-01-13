@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.krrrr38.idea.mockito.postfix</id>
   <name>Mockito Postfix Completion Plugin</name>
-  <version>0.0.1</version>
+  <version>0.0.2</version>
   <vendor email="k.kaizu38@gmail.com" url="http://www.krrrr38.com">krrrr38</vendor>
 
   <description><![CDATA[
@@ -11,6 +11,7 @@
   <change-notes><![CDATA[
       <ul>
         <li>0.0.1 initial release</li>
+        <li>0.0.2 fix idea-version settings</li>
       </ul>
     ]]>
   </change-notes>

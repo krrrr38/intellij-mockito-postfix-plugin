@@ -1,19 +1,21 @@
 plugins {
-    id "org.jetbrains.intellij" version "0.0.37"
+    id "org.jetbrains.intellij" version "0.0.38"
 }
 
 apply plugin: 'java'
 apply plugin: 'org.jetbrains.intellij'
 
 group 'com.krrrr38.idea.mockito.postfix'
-version '0.0.1'
+version '0.0.2'
 
 intellij {
+    version '14.1.2'
     pluginName 'Mockito Postfix Completion Plugin'
 
     publish {
-        // pluginId 'plguinId'
-        // username 'uername'
-        // password 'password'
+        pluginId '8150'
+        // set values in ~/.gradle/gradle.properties.
+        password project.properties['intellij.publish.password']
+        username project.properties['intellij.publish.username']
     }
 }
