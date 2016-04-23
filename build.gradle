@@ -6,10 +6,10 @@ apply plugin: 'java'
 apply plugin: 'org.jetbrains.intellij'
 
 group 'com.krrrr38.idea.mockito.postfix'
-version '0.0.3'
+version '0.0.5'
 
 intellij {
-    version '15.0.1'
+    version '145.184.1'
     pluginName 'Mockito Postfix Completion Plugin'
 
     publish {
