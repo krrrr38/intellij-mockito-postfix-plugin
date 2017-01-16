@@ -1,7 +1,7 @@
 <idea-plugin version="2">
   <id>com.krrrr38.idea.mockito.postfix</id>
   <name>Mockito Postfix Completion Plugin</name>
-  <version>0.0.5</version>
+  <version>0.0.6</version>
   <vendor email="k.kaizu38@gmail.com" url="http://www.krrrr38.com">krrrr38</vendor>
 
   <description><![CDATA[
@@ -11,9 +11,10 @@
   <change-notes><![CDATA[
       <ul>
         <li>0.0.1 initial release</li>
-        <li>0.0.2 fix idea-version settings for intellij 14</li>
-        <li>0.0.3 fix idea-version settings for intellij 15</li>
-        <li>0.0.5 for intellij 2016</li>
+        <li>0.0.2 fix idea-version settings for Intellij IDEA 14</li>
+        <li>0.0.3 fix idea-version settings for Intellij IDEA 15</li>
+        <li>0.0.5 for Intellij IDEA 2016</li>
+        <li>0.0.6 for Intellij IDEA 2016.3+</li>
       </ul>
     ]]>
   </change-notes>
