@@ -1,5 +1,11 @@
+buildscript {
+    repositories {
+        maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
+    }
+}
+
 plugins {
-    id "org.jetbrains.intellij" version "0.0.38"
+    id "org.jetbrains.intellij" version "0.2.0"
 }
 
 apply plugin: 'java'
@@ -7,6 +13,10 @@ apply plugin: 'org.jetbrains.intellij'
 
 group 'com.krrrr38.idea.mockito.postfix'
 version '0.0.6'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
+}
 
 intellij {
     version '145.184.1'
