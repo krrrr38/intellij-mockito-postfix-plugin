@@ -11,7 +11,8 @@ public class SpyTemplate extends StringBasedPostfixTemplate {
 
     public SpyTemplate() {
         super("spy", "spy(expr)",
-                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE));
+                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
+                null);
     }
 
     @Override

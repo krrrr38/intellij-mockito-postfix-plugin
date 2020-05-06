@@ -13,7 +13,8 @@ public class DoReturnTemplate extends StringBasedPostfixTemplate {
 
     public DoReturnTemplate() {
         super("doReturn", "doReturn(ret).when(expr)",
-                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE));
+                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
+                null);
     }
 
     @Override

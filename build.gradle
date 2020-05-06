@@ -1,32 +1,30 @@
-buildscript {
-    repositories {
-        maven { url 'http://dl.bintray.com/jetbrains/intellij-plugin-service' }
-    }
-}
-
 plugins {
-    id "org.jetbrains.intellij" version "0.2.0"
+    id "org.jetbrains.intellij" version "0.4.20"
 }
 
 apply plugin: 'java'
 apply plugin: 'org.jetbrains.intellij'
 
 group 'com.krrrr38.idea.mockito.postfix'
-version '0.0.6'
+version '0.0.7'
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '3.3'
+repositories {
+    mavenCentral()
 }
 
 intellij {
-    version '145.184.1'
+    plugins = ['java']
+    version '193.7288.26'
     pluginName 'Mockito Postfix Completion Plugin'
     updateSinceUntilBuild false
+}
 
-    publish {
-        pluginId '8150'
-        // set values in ~/.gradle/gradle.properties.
-        password project.properties['intellij.publish.password']
-        username project.properties['intellij.publish.username']
-    }
+publishPlugin {
+  // https://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/deployment.html#providing-your-hub-permanent-token-to-gradle
+  // set values in ~/.gradle/gradle.properties.
+  token project.properties['intellij.publish.token']
+}
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:all" << "-Werror"
 }

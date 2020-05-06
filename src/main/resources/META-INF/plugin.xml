@@ -15,14 +15,15 @@
         <li>0.0.3 fix idea-version settings for Intellij IDEA 15</li>
         <li>0.0.5 for Intellij IDEA 2016</li>
         <li>0.0.6 for Intellij IDEA 2016.3+</li>
+        <li>0.0.7 for Intellij IDEA 2019.3+</li>
       </ul>
     ]]>
   </change-notes>
 
-  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
-  <idea-version since-build="139"/>
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="193.7288.26"/>
 
-  <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
@@ -33,16 +34,7 @@
                                                   implementationClass="com.krrrr38.idea.mockito.postfix.MockitoPostfixTemplateProvider" />
   </extensions>
 
-  <application-components>
-    <!-- Add your application components here -->
-  </application-components>
-
-  <project-components>
-    <!-- Add your project components here -->
-  </project-components>
-
-  <actions>
-    <!-- Add your actions here -->
-  </actions>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.java</depends>
 
 </idea-plugin>

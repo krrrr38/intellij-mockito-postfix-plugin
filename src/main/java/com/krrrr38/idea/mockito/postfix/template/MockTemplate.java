@@ -15,7 +15,8 @@ public class MockTemplate extends StringBasedPostfixTemplate {
 
     public MockTemplate() {
         super("mock", "mock(expr)",
-                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE));
+                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
+                null);
     }
 
     @Override

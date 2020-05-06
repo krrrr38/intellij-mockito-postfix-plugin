@@ -13,7 +13,8 @@ public class DoThrowTemplate extends StringBasedPostfixTemplate {
 
     public DoThrowTemplate() {
         super("doThrow", "doThrow(ex).when(expr)",
-                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE));
+                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
+                null);
     }
 
     @Override

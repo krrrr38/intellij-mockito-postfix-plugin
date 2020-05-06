@@ -32,7 +32,7 @@ https://plugins.jetbrains.com/plugin/8150
 ## Develop
 
 ```sh
-./gradlew runIdea
+./gradlew runIde
 ```
 
 ## LICENSE

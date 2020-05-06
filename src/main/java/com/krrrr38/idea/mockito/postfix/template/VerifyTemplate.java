@@ -11,7 +11,8 @@ public class VerifyTemplate extends StringBasedPostfixTemplate {
 
     public VerifyTemplate() {
         super("verify", "verify(expr)",
-                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE));
+                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
+                null);
     }
 
     @Override

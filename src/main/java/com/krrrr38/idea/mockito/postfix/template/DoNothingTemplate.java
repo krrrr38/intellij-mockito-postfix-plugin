@@ -11,7 +11,8 @@ public class DoNothingTemplate extends StringBasedPostfixTemplate {
 
     public DoNothingTemplate() {
         super("doNothing", "doNothing().when(expr)",
-                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE));
+                JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
+                null);
     }
 
     @Override
