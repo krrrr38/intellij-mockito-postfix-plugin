@@ -58,6 +58,12 @@ https://plugins.jetbrains.com/plugin/8150
 ./gradlew runIde
 ```
 
+## Publish
+
+```sh
+./gradlew publishPlugin
+```
+
 ## LICENSE
 
 MIT
