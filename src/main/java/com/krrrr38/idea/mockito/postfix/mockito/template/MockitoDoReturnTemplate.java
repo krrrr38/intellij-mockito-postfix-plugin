@@ -1,4 +1,4 @@
-package com.krrrr38.idea.mockito.postfix.template;
+package com.krrrr38.idea.mockito.postfix.mockito.template;
 
 import com.intellij.codeInsight.template.Template;
 import com.intellij.codeInsight.template.TemplateManager;
@@ -7,11 +7,12 @@ import com.intellij.codeInsight.template.macro.SuggestVariableNameMacro;
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate;
 import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils;
 import com.intellij.psi.PsiElement;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class DoReturnTemplate extends StringBasedPostfixTemplate {
+public class MockitoDoReturnTemplate extends StringBasedPostfixTemplate {
 
-    public DoReturnTemplate() {
+    public MockitoDoReturnTemplate() {
         super("doReturn", "doReturn(ret).when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
@@ -26,12 +27,12 @@ public class DoReturnTemplate extends StringBasedPostfixTemplate {
 
     @Nullable
     @Override
-    public String getTemplateString(PsiElement psiElement) {
+    public String getTemplateString(@NotNull PsiElement psiElement) {
         return "org.mockito.Mockito.doReturn($return$).when($expr$)$END$";
     }
 
     @Override
-    public void setVariables(Template template, PsiElement element) {
+    public void setVariables(@NotNull Template template, @NotNull PsiElement element) {
         super.setVariables(template, element);
         template.addVariable("return", new MacroCallNode(new SuggestVariableNameMacro()), false);
     }

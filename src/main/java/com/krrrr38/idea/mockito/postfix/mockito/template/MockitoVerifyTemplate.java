@@ -1,16 +1,17 @@
-package com.krrrr38.idea.mockito.postfix.template;
+package com.krrrr38.idea.mockito.postfix.mockito.template;
 
 import com.intellij.codeInsight.template.Template;
 import com.intellij.codeInsight.template.TemplateManager;
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate;
 import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils;
 import com.intellij.psi.PsiElement;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class DoNothingTemplate extends StringBasedPostfixTemplate {
+public class MockitoVerifyTemplate extends StringBasedPostfixTemplate {
 
-    public DoNothingTemplate() {
-        super("doNothing", "doNothing().when(expr)",
+    public MockitoVerifyTemplate() {
+        super("verify", "verify(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }
@@ -24,7 +25,7 @@ public class DoNothingTemplate extends StringBasedPostfixTemplate {
 
     @Nullable
     @Override
-    public String getTemplateString(PsiElement psiElement) {
-        return "org.mockito.Mockito.doNothing().when($expr$)$END$";
+    public String getTemplateString(@NotNull PsiElement psiElement) {
+        return "org.mockito.Mockito.verify($expr$)$END$";
     }
 }

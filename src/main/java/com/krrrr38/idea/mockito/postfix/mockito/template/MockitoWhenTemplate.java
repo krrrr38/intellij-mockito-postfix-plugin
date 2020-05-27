@@ -1,15 +1,16 @@
-package com.krrrr38.idea.mockito.postfix.template;
+package com.krrrr38.idea.mockito.postfix.mockito.template;
 
 import com.intellij.codeInsight.template.Template;
 import com.intellij.codeInsight.template.TemplateManager;
 import com.intellij.codeInsight.template.postfix.templates.StringBasedPostfixTemplate;
 import com.intellij.codeInsight.template.postfix.util.JavaPostfixTemplatesUtils;
 import com.intellij.psi.PsiElement;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class WhenTemplate extends StringBasedPostfixTemplate {
+public class MockitoWhenTemplate extends StringBasedPostfixTemplate {
 
-    public WhenTemplate() {
+    public MockitoWhenTemplate() {
         super("when", "when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
@@ -24,7 +25,7 @@ public class WhenTemplate extends StringBasedPostfixTemplate {
 
     @Nullable
     @Override
-    public String getTemplateString(PsiElement psiElement) {
+    public String getTemplateString(@NotNull PsiElement psiElement) {
         return "org.mockito.Mockito.when($expr$)$END$";
     }
 }

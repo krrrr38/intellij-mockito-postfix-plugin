@@ -30,8 +30,9 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <codeInsight.template.postfixTemplateProvider language="JAVA"
-                                                  implementationClass="com.krrrr38.idea.mockito.postfix.MockitoPostfixTemplateProvider" />
+    <codeInsight.template.postfixTemplateProvider
+            language="JAVA"
+            implementationClass="com.krrrr38.idea.mockito.postfix.mockito.MockitoPostfixTemplateProvider" />
   </extensions>
 
   <depends>com.intellij.modules.platform</depends>
