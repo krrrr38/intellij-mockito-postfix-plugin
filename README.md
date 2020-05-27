@@ -12,6 +12,8 @@ https://plugins.jetbrains.com/plugin/8150
 
 ## Usage
 
+### org.mockito.Mockito
+
 - `mock` completion
   - `.mock` will complete `org.mockito.Mockito.mock`
 - `spy` completion
@@ -28,6 +30,25 @@ https://plugins.jetbrains.com/plugin/8150
   - `.doThrow` will complete `org.mockito.Mockito.doThrow`
 
 ![](./images/mockito-postfix-plugin-demo.gif)
+
+### org.mockito.BDDMockito
+
+- `given` completion
+  - `.given` will complete `org.mockito.BDDMockito.given`
+- `then` completion
+  - `.then` will complete `org.mockito.BDDMockito.then`
+- `will` completion
+  - `.will` will complete `org.mockito.BDDMockito.will`
+- `willAnswer` completion
+  - `.willAnswer` will complete `org.mockito.BDDMockito.willAnswer`
+- `willDoNothing` completion
+  - `.willDoNothing` will complete `org.mockito.BDDMockito.willDoNothing`
+- `willReturn` completion
+  - `.willReturn` will complete `org.mockito.BDDMockito.willReturn`
+- `willThrow` completion
+  - `.willThrow` will complete `org.mockito.BDDMockito.willThrow`
+- `willCallRealMethod` completion
+  - `.willCallRealMethod` will complete `org.mockito.BDDMockito.willCallRealMethod`
 
 ## Develop
 

@@ -1,0 +1,7 @@
+import static org.mockito.BDDMockito.then;
+
+public class FooTest {
+  void method(Object o) {
+    then(o)
+  }
+}
