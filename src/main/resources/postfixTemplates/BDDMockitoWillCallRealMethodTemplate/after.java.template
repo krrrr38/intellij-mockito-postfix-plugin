@@ -1,0 +1,7 @@
+import static org.mockito.BDDMockito.willNothing;
+
+public class FooTest {
+  void method(Object o) {
+    willCallRealMethod().given(o)
+  }
+}

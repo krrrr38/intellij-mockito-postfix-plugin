@@ -1,4 +1,4 @@
-package com.krrrr38.idea.mockito.postfix.template;
+package com.krrrr38.idea.mockito.postfix.mockito.template;
 
 import com.intellij.codeInsight.template.Template;
 import com.intellij.codeInsight.template.TemplateManager;
@@ -9,11 +9,12 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiLocalVariable;
 import com.intellij.psi.PsiReference;
 import com.intellij.psi.PsiType;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class MockTemplate extends StringBasedPostfixTemplate {
+public class MockitoMockTemplate extends StringBasedPostfixTemplate {
 
-    public MockTemplate() {
+    public MockitoMockTemplate() {
         super("mock", "mock(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
@@ -28,7 +29,7 @@ public class MockTemplate extends StringBasedPostfixTemplate {
 
     @Nullable
     @Override
-    public String getTemplateString(PsiElement psiElement) {
+    public String getTemplateString(@NotNull PsiElement psiElement) {
         String clazz;
         if (psiElement instanceof PsiReference) {
             // foo.mock

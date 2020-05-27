@@ -1,0 +1,5 @@
+public class FooTest {
+  void method(Object o) {
+    o.given$key
+  }
+}

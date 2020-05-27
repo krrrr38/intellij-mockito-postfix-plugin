@@ -1,0 +1,7 @@
+import static org.mockito.BDDMockito.willDoNothing;
+
+public class FooTest {
+  void method(Object o) {
+    willDoNothing().given(o)
+  }
+}
