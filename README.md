@@ -28,6 +28,8 @@ https://plugins.jetbrains.com/plugin/8150
   - `.doNothing` will complete `org.mockito.Mockito.doNothing`
 - `doThrow` completion
   - `.doThrow` will complete `org.mockito.Mockito.doThrow`
+- `doCallRealMethod` completion
+  - `.doCallRealMethod` will complete `org.mockito.Mockito.doCallRealMethod`
 
 ![](./images/mockito-postfix-plugin-demo.gif)
 

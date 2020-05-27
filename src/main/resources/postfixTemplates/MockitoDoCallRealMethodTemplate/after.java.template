@@ -1,0 +1,7 @@
+import static org.mockito.Mockito.doCallRealMethod;
+
+public class FooTest {
+  void method(Object o) {
+    doCallRealMethod().when(o)
+  }
+}

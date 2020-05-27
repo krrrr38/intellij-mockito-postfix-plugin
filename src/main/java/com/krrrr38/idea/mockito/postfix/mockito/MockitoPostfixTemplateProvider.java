@@ -2,6 +2,7 @@ package com.krrrr38.idea.mockito.postfix.mockito;
 
 import com.intellij.codeInsight.template.postfix.templates.JavaPostfixTemplateProvider;
 import com.intellij.codeInsight.template.postfix.templates.PostfixTemplate;
+import com.krrrr38.idea.mockito.postfix.mockito.template.MockitoDoCallRealMethodTemplate;
 import com.krrrr38.idea.mockito.postfix.mockito.template.MockitoDoNothingTemplate;
 import com.krrrr38.idea.mockito.postfix.mockito.template.MockitoDoReturnTemplate;
 import com.krrrr38.idea.mockito.postfix.mockito.template.MockitoDoThrowTemplate;
@@ -19,6 +20,7 @@ public class MockitoPostfixTemplateProvider extends JavaPostfixTemplateProvider 
 
     public MockitoPostfixTemplateProvider() {
         templates = new HashSet<>();
+        templates.add(new MockitoDoCallRealMethodTemplate());
         templates.add(new MockitoDoNothingTemplate());
         templates.add(new MockitoDoReturnTemplate());
         templates.add(new MockitoDoThrowTemplate());
