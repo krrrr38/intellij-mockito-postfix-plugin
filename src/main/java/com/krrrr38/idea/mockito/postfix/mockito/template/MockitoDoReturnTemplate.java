@@ -13,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoDoReturnTemplate extends StringBasedPostfixTemplate {
 
     public MockitoDoReturnTemplate() {
-        super("doReturn", "doReturn(ret).when(expr)",
+        super("doReturn", "Mockito.doReturn(ret).when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

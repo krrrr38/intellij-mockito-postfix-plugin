@@ -13,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 public class BDDMockitoWillAnswerTemplate extends StringBasedPostfixTemplate {
 
     public BDDMockitoWillAnswerTemplate() {
-        super("willAnswer", "willAnswer(answer).given(expr)",
+        super("willAnswer", "BDDMockito.willAnswer(answer).given(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

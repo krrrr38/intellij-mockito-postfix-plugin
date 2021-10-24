@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class BDDMockitoThenTemplate extends StringBasedPostfixTemplate {
 
     public BDDMockitoThenTemplate() {
-        super("then", "then(expr)",
+        super("then", "BDDMockito.then(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

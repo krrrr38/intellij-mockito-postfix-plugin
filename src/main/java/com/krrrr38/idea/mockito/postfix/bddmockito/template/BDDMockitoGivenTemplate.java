@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class BDDMockitoGivenTemplate extends StringBasedPostfixTemplate {
 
     public BDDMockitoGivenTemplate() {
-        super("given", "given(expr)",
+        super("given", "BDDMockito.given(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

@@ -15,7 +15,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoMockTemplate extends StringBasedPostfixTemplate {
 
     public MockitoMockTemplate() {
-        super("mock", "mock(expr)",
+        super("mock", "Mockito.mock(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

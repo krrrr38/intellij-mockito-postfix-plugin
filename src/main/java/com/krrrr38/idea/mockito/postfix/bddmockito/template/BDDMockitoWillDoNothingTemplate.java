@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class BDDMockitoWillDoNothingTemplate extends StringBasedPostfixTemplate {
 
     public BDDMockitoWillDoNothingTemplate() {
-        super("willDoNothing", "willDoNothing().given(expr)",
+        super("willDoNothing", "BDDMockito.willDoNothing().given(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

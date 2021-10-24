@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoSpyTemplate extends StringBasedPostfixTemplate {
 
     public MockitoSpyTemplate() {
-        super("spy", "spy(expr)",
+        super("spy", "Mockito.spy(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

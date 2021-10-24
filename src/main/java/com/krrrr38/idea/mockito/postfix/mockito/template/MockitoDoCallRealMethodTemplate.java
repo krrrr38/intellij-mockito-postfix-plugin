@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoDoCallRealMethodTemplate extends StringBasedPostfixTemplate {
 
     public MockitoDoCallRealMethodTemplate() {
-        super("doCallRealMethod", "doCallRealMethod().when(expr)",
+        super("doCallRealMethod", "Mockito.doCallRealMethod().when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

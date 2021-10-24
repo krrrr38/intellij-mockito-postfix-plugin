@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class BDDMockitoWillCallRealMethodTemplate extends StringBasedPostfixTemplate {
 
     public BDDMockitoWillCallRealMethodTemplate() {
-        super("willCallRealMethod", "willCallRealMethod().given(expr)",
+        super("willCallRealMethod", "BDDMockito.willCallRealMethod().given(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

@@ -1,5 +1,5 @@
 plugins {
-    id "org.jetbrains.intellij" version "0.4.20"
+    id "org.jetbrains.intellij" version "1.2.0"
 }
 
 apply plugin: 'java'
@@ -14,15 +14,15 @@ repositories {
 
 intellij {
     plugins = ['java']
-    version '193.7288.26'
-    pluginName 'Mockito Postfix Completion Plugin'
-    updateSinceUntilBuild false
+    version = '2021.2.2'
+    pluginName = 'Mockito Postfix Completion Plugin'
+    updateSinceUntilBuild = false
 }
 
 publishPlugin {
   // https://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/deployment.html#providing-your-hub-permanent-token-to-gradle
   // set values in ~/.gradle/gradle.properties.
-  token project.properties['intellij.publish.token']
+  token = project.properties['intellij.publish.token']
 }
 
 tasks.withType(JavaCompile) {

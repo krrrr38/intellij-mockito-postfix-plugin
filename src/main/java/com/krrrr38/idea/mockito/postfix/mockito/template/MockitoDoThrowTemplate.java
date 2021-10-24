@@ -13,7 +13,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoDoThrowTemplate extends StringBasedPostfixTemplate {
 
     public MockitoDoThrowTemplate() {
-        super("doThrow", "doThrow(ex).when(expr)",
+        super("doThrow", "Mockito.doThrow(ex).when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

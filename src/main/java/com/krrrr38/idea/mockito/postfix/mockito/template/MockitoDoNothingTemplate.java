@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoDoNothingTemplate extends StringBasedPostfixTemplate {
 
     public MockitoDoNothingTemplate() {
-        super("doNothing", "doNothing().when(expr)",
+        super("doNothing", "Mockito.doNothing().when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

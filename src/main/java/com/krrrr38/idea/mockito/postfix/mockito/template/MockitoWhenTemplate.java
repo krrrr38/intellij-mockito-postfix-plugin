@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoWhenTemplate extends StringBasedPostfixTemplate {
 
     public MockitoWhenTemplate() {
-        super("when", "when(expr)",
+        super("when", "Mockito.when(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }

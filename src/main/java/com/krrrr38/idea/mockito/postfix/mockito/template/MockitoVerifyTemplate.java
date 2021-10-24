@@ -11,7 +11,7 @@ import org.jetbrains.annotations.Nullable;
 public class MockitoVerifyTemplate extends StringBasedPostfixTemplate {
 
     public MockitoVerifyTemplate() {
-        super("verify", "verify(expr)",
+        super("verify", "Mockito.verify(expr)",
                 JavaPostfixTemplatesUtils.selectorAllExpressionsWithCurrentOffset(JavaPostfixTemplatesUtils.IS_NOT_PRIMITIVE),
                 null);
     }
