@@ -56,6 +56,7 @@ https://plugins.jetbrains.com/plugin/8150
 
 ```sh
 ./gradlew runIde
+./gradlew buildPlugin
 ```
 
 ## Publish
