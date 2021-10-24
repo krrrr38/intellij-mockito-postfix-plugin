@@ -1,0 +1,34 @@
+name: Build
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  gradleValidation:
+    name: Gradle Wrapper
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Sources
+        uses: actions/checkout@v2.3.4
+      - name: Gradle Wrapper Validation
+        uses: gradle/wrapper-validation-action@v1.0.4
+  test:
+    name: Test
+    needs: gradleValidation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Sources
+        uses: actions/checkout@v2.3.4
+      - name: Setup Java
+        uses: actions/setup-java@v2
+        with:
+          distribution: zulu
+          java-version: 11
+          cache: gradle
+      - name: Run Tests
+        run: ./gradlew test
+      - name: Verify Plugin
+        run: ./gradlew verifyPlugin
+      - name: Build Plugin
+        run: ./gradlew buildPlugin
