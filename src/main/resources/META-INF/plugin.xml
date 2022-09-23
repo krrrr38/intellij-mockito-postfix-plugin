@@ -2,10 +2,10 @@
   <id>com.krrrr38.idea.mockito.postfix</id>
   <name>Mockito Postfix Completion</name>
   <version>0.0.9</version>
-  <vendor email="k.kaizu38@gmail.com" url="http://www.krrrr38.com">krrrr38</vendor>
+  <vendor email="k.kaizu38@gmail.com" url="https://www.krrrr38.com">krrrr38</vendor>
 
   <description><![CDATA[
-          This plugin adds postfix completion template for <a href="http://mockito.org/">Mockito</a>.
+          This plugin adds postfix completion template for <a href="https://site.mockito.org/">Mockito</a>.
     ]]></description>
 
   <change-notes><![CDATA[
@@ -22,10 +22,10 @@
     ]]>
   </change-notes>
 
-  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
   <idea-version since-build="193.7288.26"/>
 
-  <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
        on how to target different products -->
   <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
